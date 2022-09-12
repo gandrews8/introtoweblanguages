@@ -11,13 +11,13 @@
 <!-- Create a button that sends the entered information to be processed -->
 <button id="my-button">Click Me</button>
 
-<script> <!-- Start of script element -->
-<!-- Creates a variable that is linked to the HTML button -->
+<script> //Start of script element
+//Creates a variable that is linked to the HTML button
   var myButton = document.querySelector('#my-button');
-<!-- Creates a varaible that is linked to the text box -->
+//Creates a varaible that is linked to the text box
   var nameInput = document.querySelector('#name-input');
 
-<!-- Waits for button to be clicked then displays Hello + whatever text is entered if it isnt empty -->
+//Waits for button to be clicked then displays Hello + whatever text is entered if it isnt empty
   myButton.addEventListener('click', function () {
     if (nameInput.value !== '') {
       alert('Hello ' + nameInput.value);
